@@ -1,0 +1,273 @@
+/* css for embedding fonts starts */
+@font-face {
+  font-family: "Noticia Text-Bold";
+  src: url(../vendor/fonts/NoticiaText-Bold.woff);
+}
+@font-face {
+  font-family: "WorkSans-medium";
+  src: url(../vendor/fonts/WorkSans-Medium.woff);
+}
+@font-face {
+  font-family: "WorkSans-regular";
+  src: url(../vendor/fonts/WorkSans-Regular.woff);
+}
+@font-face {
+  font-family: "WorkSans-bold";
+  src: url(../vendor/fonts/WorkSans-SemiBold.woff);
+}
+/* css for embedding fonts ends */
+/* general css starts here */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* container css */
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+body {
+  background-color: #78c51c;
+}
+/* general css ends here */
+
+/* main section css starts here */
+
+/* about section css starts */
+.about {
+  padding: 80px 0 50px;
+}
+/* about_cards section css */
+.about_cards {
+  background-color: #2a6b2c;
+  padding: 60px;
+  border-radius: 20px;
+  display: flex;
+  gap: 130px;
+}
+/* about card css */
+.about_card {
+  color: #eef2e3;
+}
+/* about section css ends */
+
+/* css for designing common elements of both sections  starts*/
+/* sub heading css */
+h5 {
+  color: #c8f169;
+  font-size: 20px;
+  font-family: "WorkSans-bold";
+  padding-bottom: 15px;
+}
+/* main heading css */
+h3 {
+  font-family: "Noticia Text-Bold";
+  font-size: 52px;
+  padding-bottom: 35px;
+}
+/* paragraph css */
+p {
+  font-family: "WorkSans-regular";
+  font-size: 18px;
+  padding-bottom: 35px;
+  width: 80%;
+}
+/* button css */
+button {
+  background: transparent;
+  font-size: 18px;
+  color: #eef2e3;
+  font-family: "WorkSans-regular";
+  border: 1px solid #eef2e3;
+  padding: 10px 25px;
+  border-radius: 7px;
+}
+/* css for designing common elements of both sections  starts*/
+
+/* modern_business section css starts here */
+.modern_business {
+  padding: 0 0 80px;
+}
+/* modern cards section css */
+.modern_cards {
+  background-color: #2a6b2c;
+  padding: 60px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+}
+/* modern card elements css */
+.modern_card_text {
+  width: 45%;
+}
+.modern_card_text,
+.modern_card_features {
+  color: #eef2e3;
+}
+.modern_card_text h3 {
+  width: 80%;
+}
+.modern_card_text p {
+  width: 90%;
+}
+/* features section css starts */
+.modern_card_features {
+  width: 55%;
+}
+/* parent grid css starts here */
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 15px;
+}
+/* grid child css */
+.feature_item {
+  background-color: #c8f169;
+  color: black;
+  border-radius: 15px;
+  padding: 10px;
+}
+.feature_item p {
+  width: max-content;
+  font-size: 12px;
+  color: #043f2e;
+  font-family: "WorkSans-regular";
+}
+/* grid child: ad_hoc child css */
+.ad_hoc {
+  grid-row: 1;
+  grid-column: 1;
+}
+.ad_hoc p {
+  position: relative;
+  top: 40%;
+}
+.ad_hoc img {
+  position: relative;
+  top: 30%;
+}
+/* grid child: interactive child css */
+.interactive {
+  grid-row: span 3;
+  grid-column: 2;
+  border-radius: 15px 0 15px 15px;
+}
+.interactive p {
+  position: relative;
+  top: 83%;
+}
+.interactive img {
+  position: relative;
+  top: 80%;
+}
+/* grid child: analytics child css */
+.analytics {
+  position: relative;
+  grid-column: 3;
+  grid-row: span 3;
+  top: -2%;
+}
+.analytics p {
+  position: relative;
+  top: 85%;
+}
+.analytics img {
+  position: relative;
+  top: 85%;
+}
+/* grid child: primary-extra child css */
+.primary {
+  position: relative;
+  grid-column: 3;
+  width: 116%;
+  grid-row: 1;
+  left: -17%;
+  border-radius: 0 15px 15px 0;
+}
+
+/* grid child: reporting child css */
+.reporting {
+  grid-column: 1;
+  grid-row: 2;
+  height: 332%;
+  border-radius: 15px 15px 0 15px;
+}
+.reporting p {
+  position: relative;
+  top: 85%;
+}
+.reporting img {
+  position: relative;
+  top: 82%;
+}
+/* grid child: custom_apps child css */
+.custom_apps {
+  position: relative;
+  left: 15%;
+  grid-row: 4;
+  grid-column: 2;
+  width: 90%;
+}
+.custom_apps p {
+  position: relative;
+  top: 41%;
+}
+.custom_apps img {
+  position: relative;
+  top: 37%;
+}
+/* grid child: secondary-extra child css */
+.secondary {
+  position: relative;
+  grid-column: 2;
+  grid-row: 4;
+  width: 23%;
+  left: -13%;
+  border-radius: 0 15px 15px 0;
+  height: 101%;
+}
+/* features section css ends */
+/* modern_business section css ends here */
+
+/* responsive css starts */
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+  .about_cards {
+    flex-direction: column;
+  }
+  .modern_cards {
+    flex-direction: column;
+    gap: 100px;
+  }
+  .modern_card_text {
+    width: 90%;
+  }
+  .modern_card_features {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .container {
+    width: 100%;
+  }
+}
